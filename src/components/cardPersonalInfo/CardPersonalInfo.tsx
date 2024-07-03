@@ -1,6 +1,6 @@
 import {useForm} from 'react-hook-form';
-import {Typography} from "../ui/typography/Typography.tsx";
 import {FormValues, PersonalInfoSchema} from "./schema.ts";
+import {Typography} from "../ui/typography/Typography.tsx";
 import {zodResolver} from '@hookform/resolvers/zod'
 import {Card} from "../ui/card/Card.tsx";
 import {ControlledTextField} from "../ui/controlledTextField/ControlledTextField.tsx";
