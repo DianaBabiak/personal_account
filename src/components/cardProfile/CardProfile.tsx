@@ -5,7 +5,7 @@ import {Tab} from "../ui/tab/Tab.tsx";
 import {Card} from "../ui/card/Card.tsx";
 import {useState} from "react";
 
-export const CardProfile = ()=>{
+export const CardProfile = () => {
     const [isActiveInformation, setActiveInformation] = useState<boolean>(true)
     const nameCurrentUserStyles = 'text-text-primary text-h-5-v-2 md:text-custom-headline'
     const subtitleStyles = 'text-text-primary text-subtitle-1'
@@ -26,7 +26,8 @@ export const CardProfile = ()=>{
                     <div className={`${containerStyles} gap-4 md:px-6`}>
                         <Typography className={subtitleStyles}>{CURRENT_USER.position}</Typography>
                         <div className='flex justify-center items-center gap-2'>
-                            <Typography className={subtitleStyles}>{CURRENT_USER.country}, {CURRENT_USER.city}</Typography>
+                            <Typography
+                                className={subtitleStyles}>{CURRENT_USER.country}, {CURRENT_USER.city}</Typography>
                             <Typography className={timeStyles}>•</Typography>
                             <Typography className={timeStyles}>14:03</Typography>
 

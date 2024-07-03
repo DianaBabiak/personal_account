@@ -9,37 +9,37 @@ import {CURRENT_USER} from "../../data/data.ts";
 
 export const Main = () => {
     const [isOpenModalInfoForm, setIsOpenModalInfoForm] = useState(false);
-    const [isOpenModalTeam , setIsOpenModalTeam] = useState(false);
-    const [currentUser,  setCurrentUser] = useState<PartialCurrentUserWithoutAvatar>(CURRENT_USER);
+    const [isOpenModalTeam, setIsOpenModalTeam] = useState(false);
+    const [currentUser, setCurrentUser] = useState<PartialCurrentUserWithoutAvatar>(CURRENT_USER);
 
-   const openModalInfoFormHandler = ()=>{
-       setIsOpenModalInfoForm(true);
-   }
+    const openModalInfoFormHandler = () => {
+        setIsOpenModalInfoForm(true);
+    }
 
-    const closeModalInfoFormHandler = ()=>{
+    const closeModalInfoFormHandler = () => {
         setIsOpenModalInfoForm(false);
     }
 
-    const openModalTeamHandler = ()=>{
+    const openModalTeamHandler = () => {
         setIsOpenModalTeam(true);
     }
 
-    const closeModalTeamHandler = ()=>{
+    const closeModalTeamHandler = () => {
         setIsOpenModalTeam(false);
     }
 
-    const changeCurrentUserInfoHandler = (userInfo:PartialCurrentUserWithoutAvatar)=>{
-       setCurrentUser(userInfo)
+    const changeCurrentUserInfoHandler = (userInfo: PartialCurrentUserWithoutAvatar) => {
+        setCurrentUser(userInfo)
     }
 
-    if(isOpenModalInfoForm){
+    if (isOpenModalInfoForm) {
         return <PersonalInfoForm closeModal={closeModalInfoFormHandler}
                                  isModal={isOpenModalInfoForm}
                                  changeCurrentUserInfo={changeCurrentUserInfoHandler}
                                  currentUser={currentUser}/>
     }
 
-    if(isOpenModalTeam){
+    if (isOpenModalTeam) {
         return <InfoTeamModal closeModalTeam={closeModalTeamHandler}/>
     }
     return (

@@ -1,4 +1,4 @@
-import { Icon } from "../icon/Icon.tsx";
+import {Icon} from "../icon/Icon.tsx";
 
 interface AvatarProps {
     src: string;
@@ -21,15 +21,15 @@ const sizeClasses: { [key in NonNullable<AvatarProps['size']>]: string } = {
     xxs: 'w-6 h-6'     // 24px
 };
 
-export const Avatar = ({ src, alt, size = 'sm', showIcon = false }: AvatarProps) => {
+export const Avatar = ({src, alt, size = 'sm', showIcon = false}: AvatarProps) => {
     const sizeClass = sizeClasses[size as NonNullable<AvatarProps['size']>];
 
     return (
         <div className={`relative rounded-full border-2 border-b-border-secondary overflow-hidden ${sizeClass}`}>
-            <img src={src} alt={alt} className="w-full h-full object-cover" />
+            <img src={src} alt={alt} className="w-full h-full object-cover"/>
             {showIcon && (
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <Icon iconId={'camera'} />
+                    <Icon iconId={'camera'}/>
                 </div>
             )}
         </div>

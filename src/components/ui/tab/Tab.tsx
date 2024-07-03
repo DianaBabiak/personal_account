@@ -1,16 +1,23 @@
-import { Icon } from "../icon/Icon.tsx";
-import { Typography } from "../typography/Typography.tsx";
+import {Icon} from "../icon/Icon.tsx";
+import {Typography} from "../typography/Typography.tsx";
 
 type TabProps = {
     label: string;
     onClick: () => void;
     isActive?: boolean;
-    number?:number
-    isShowChevron?:boolean
-    isShowNumber?:boolean
+    number?: number
+    isShowChevron?: boolean
+    isShowNumber?: boolean
 };
 
-export const Tab = ({ label, onClick, isActive=false, number, isShowNumber=false, isShowChevron=false }: TabProps) => {
+export const Tab = ({
+                        label,
+                        onClick,
+                        isActive = false,
+                        number,
+                        isShowNumber = false,
+                        isShowChevron = false
+                    }: TabProps) => {
     const baseClasses = `focus-visible:outline px-4 py-2 focus:outline-none focus:ring-2 
                                 ${isActive ? 'border-b-2 border-border-accent border-solid text-text-primary' : ''}`
     const defaultClasses = "text-text-secondary"

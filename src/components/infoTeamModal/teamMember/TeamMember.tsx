@@ -6,9 +6,10 @@ import {Typography} from "../../ui/typography/Typography.tsx";
 interface TeamMemberProps {
     member: ITeamMember
 }
-export const TeamMember = ({member}:TeamMemberProps) => {
 
-    return(
+export const TeamMember = ({member}: TeamMemberProps) => {
+
+    return (
         <div className='flex gap-2'>
             <Avatar src={member.avatar} alt={`${member.name}Avatar`}/>
             <div className='flex flex-col'>

@@ -1,5 +1,5 @@
-import { FieldValues, UseControllerProps, useController } from 'react-hook-form'
-import {TextField, Props as TextFieldProps} from "../textfield/TextField.tsx";
+import {FieldValues, useController, UseControllerProps} from 'react-hook-form'
+import {Props as TextFieldProps, TextField} from "../textfield/TextField.tsx";
 
 
 type Props<T extends FieldValues> = UseControllerProps<T> &
@@ -14,7 +14,7 @@ export const ControlledTextField = <T extends FieldValues>({
                                                                ...rest
                                                            }: Props<T>) => {
     const {
-        field: { onBlur, onChange, ref, value = defaultValue },
+        field: {onBlur, onChange, ref, value = defaultValue},
     } = useController({
         control,
         disabled,
