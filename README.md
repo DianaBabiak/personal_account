@@ -1,34 +1,38 @@
-# React + TypeScript + Vite
+# Aspority Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aspority Employee Management System is a modern web application designed for managing employee details, projects, and workload. The application is built using Vite, TypeScript, React Hook Form, Tailwind CSS, and Zod for form validation.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
+- **Employee Details Management:** View and edit personal information of employees, including name, email, job position, and start date.
+- **Project Assignment:** Assign employees to different projects and track their workload.
+- **Responsive Design:** User-friendly interface with a responsive design to ensure compatibility across various devices.
+- **Form Validation:** Uses Zod and React Hook Form for robust form validation and handling.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite:** Fast build tool and development server.
+- **TypeScript:** For type safety and improved developer experience.
+- **React Hook Form:** For efficient form handling and validation.
+- **Tailwind CSS:** Utility-first CSS framework for designing responsive interfaces.
+- **Zod:** For schema-based form validation.
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Prerequisites
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked`
-  or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and
-  add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Node.js and Yarn installed on your machine.
+
+### Installation
+
+   Clone the repository:
+   ```bash
+   git@github.com:DianaBabiak/personal_account.git
+   cd personal_account
+   yarn install
+   yarn dev
+
+📧 Contact
+If you have any questions or suggestions, please feel free to contact me at dibabiak@gmail.com.
+
+
