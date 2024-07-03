@@ -5,10 +5,5 @@
       "dest": "/",
       "status": 200
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 15
-    }
-  }
+  ]
 }
