@@ -31,8 +31,3 @@ Aspority Employee Management System is a modern web application designed for man
    cd personal_account
    yarn install
    yarn dev
-
-📧 Contact
-If you have any questions or suggestions, please feel free to contact me at dibabiak@gmail.com.
-
-
