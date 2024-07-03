@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .text-custom-headline {
+        @apply font-sans text-3xl font-bold leading-xl tracking-normal;
+    }
+
+    .text-title-3 {
+        @apply font-sans text-sm font-medium leading-sm tracking-normal;
+    }
+
+    .text-h-1 {
+        @apply font-sans text-5xl font-light leading-3xl tracking-normal;
+    }
+
+    .text-h-2 {
+        @apply font-sans text-4xl font-light leading-2xl tracking-normal;
+    }
+
+    .text-h-3 {
+        @apply font-sans text-3xl font-regular leading-xl tracking-normal;
+    }
+
+    .text-h-4 {
+        @apply font-sans text-2xl font-regular leading-lg tracking-normal;
+    }
+
+    .text-h-5 {
+        @apply font-sans text-lg font-regular leading-md tracking-normal;
+    }
+
+    .text-h-6 {
+        @apply font-sans text-base font-semibold leading-sm tracking-normal;
+    }
+
+    .text-subtitle-1 {
+        @apply font-sans text-sm font-regular leading-sm tracking-normal;
+    }
+
+    .text-subtitle-2 {
+        @apply font-sans text-xs font-medium leading-sm tracking-normal;
+    }
+
+    .text-body-1 {
+        @apply font-sans text-sm font-regular leading-sm tracking-normal;
+    }
+
+    .text-body-2 {
+        @apply font-sans text-xs font-regular leading-xs tracking-normal;
+    }
+
+    .text-button {
+        @apply font-sans text-xs font-semibold leading-xs tracking-normal;
+    }
+
+    .text-caption {
+        @apply font-sans text-xxs font-regular leading-xxs tracking-normal;
+    }
+
+    .text-overline {
+        @apply font-sans text-xxs font-regular leading-md tracking-normal;
+    }
+
+    .text-h-5-v-2 {
+        @apply font-sans text-lg font-semibold leading-md tracking-normal;
+    }
+
+}
