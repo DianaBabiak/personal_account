@@ -20,7 +20,7 @@ export const Tab = ({
                     }: TabProps) => {
     const baseClasses = `focus-visible:outline px-4 py-2 focus:outline-none focus:ring-2 
                                 ${isActive ? 'border-b-2 border-border-accent border-solid text-text-primary' : ''}`
-    const defaultClasses = "text-text-secondary"
+    const defaultClasses = "text-text-secondary cursor-pointer"
     const hoverClasses = "hover:text-text-primary"
 
     return (
